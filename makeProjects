@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+NUM="5.5"
+FOLDERS=$(sed 's/\./\//g' <(echo "$1"))
+
+mkdir -p guiones/src/java/$FOLDERS
+mkdir -p guiones/test/java/$FOLDERS
